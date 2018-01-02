@@ -22,7 +22,6 @@ public class StreamFeeds {
 
     @PostConstruct
     private void initConfiguration(){
-        System.err.println("I am trying");
         ConfigurationBuilder cb = new ConfigurationBuilder();
         cb.setDebugEnabled(false)
                 .setOAuthConsumerKey(twitterProperties.getConsumerKey())

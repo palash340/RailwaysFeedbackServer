@@ -9,10 +9,19 @@ import org.springframework.context.annotation.PropertySource;
 @ConfigurationProperties(prefix = "oauth")
 @PropertySource("classpath:twitter4j.properties")
 public class TwitterProperties {
+    private boolean debug;
     private String consumerKey;
     private String consumerSecret;
     private String accessToken;
     private String accessTokenSecret;
+
+    public boolean isDebug() {
+        return debug;
+    }
+
+    public void setDebug(boolean debug) {
+        this.debug = debug;
+    }
 
     public String getConsumerKey() {
         return consumerKey;
