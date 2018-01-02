@@ -9,7 +9,7 @@ import org.springframework.stereotype.Controller;
 
 @Controller
 @EnableAutoConfiguration
-@ComponentScan(basePackageClasses = TwitterProperties.class)
+@ComponentScan(basePackages  = {"com.irctc"})
 public class ApplicationStartup {
 
     @Autowired
