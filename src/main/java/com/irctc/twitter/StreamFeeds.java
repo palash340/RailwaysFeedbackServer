@@ -3,6 +3,7 @@ package com.irctc.twitter;
 import com.irctc.dto.TwitterProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
 import twitter4j.*;
 import twitter4j.auth.AccessToken;
 import twitter4j.conf.ConfigurationBuilder;
@@ -10,6 +11,7 @@ import twitter4j.conf.ConfigurationBuilder;
 import javax.annotation.PostConstruct;
 import java.util.List;
 
+@Component
 @ComponentScan(basePackageClasses = StreamFeeds.class)
 public class StreamFeeds {
 
