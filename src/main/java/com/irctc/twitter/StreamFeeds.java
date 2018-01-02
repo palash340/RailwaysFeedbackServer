@@ -1,6 +1,6 @@
 package com.irctc.twitter;
 
-import com.irctc.beans.TwitterProperties;
+import com.irctc.dto.TwitterProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import twitter4j.*;

@@ -1,4 +1,4 @@
-package com.irctc.beans;
+package com.irctc.dto;
 
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
